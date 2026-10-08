@@ -1,8 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-
-<suite name="Master Suite">
-
 <groups>
 	<run>
 		<include name="Master"/>
@@ -16,7 +11,7 @@
 	<listener class-name="utilities.ExtentReportManager"/>
 </listeners>
 
-  <test name="Linux-Chrome2">
+  <test name="Linux-Chrome">
     <parameter name="os" value="Linux"/>
     <parameter name="browser" value="chrome"/>
      
@@ -25,5 +20,3 @@
      		<class name="testCases.TC002_LoginTest"/> 
     </classes>
   </test> 
-</suite> <!-- Suite -->
-

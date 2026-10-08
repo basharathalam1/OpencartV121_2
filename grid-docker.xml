@@ -2,7 +2,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Master Suite">
 
-<groups>
+
+  <groups>
 	<run>
 		<include name="Master"/>
 		<!--<include name="Sanity"/> -->
@@ -13,8 +14,8 @@
 
 <listeners>
 	<listener class-name="utilities.ExtentReportManager"/>
-</listeners>
-
+</listeners> 
+  
   <test name="Linux-Chrome">
     <parameter name="os" value="Linux"/>
     <parameter name="browser" value="chrome"/>
